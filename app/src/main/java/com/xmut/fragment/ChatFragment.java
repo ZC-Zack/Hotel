@@ -29,8 +29,8 @@ public class ChatFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup group, Bundle bundle){
         view = inflater.inflate(R.layout.chat_layout, group, false);
-        initMsg();
-        initView();
+        /*initMsg();
+        initView();*/
         return  view;
     }
 
@@ -55,6 +55,8 @@ public class ChatFragment extends Fragment {
                     adapter.notifyItemInserted(massageList.size() - 1);
                     recyclerView.scrollToPosition(massageList.size() - 1);
                     editText.setText("");
+
+
                 }
             }
         });
