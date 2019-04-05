@@ -43,7 +43,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         accountEdit = (EditText) findViewById(R.id.account);
         passwordEdit = (EditText) findViewById(R.id.password);
 
-        Button registerButton = (Button) findViewById(R.id.register);
+        Button registerButton = (Button) findViewById(R.id.act_login_phone_RegisterBut);
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,7 +58,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             }
         });
 
-        Button loginpass = (Button) findViewById(R.id.login_pass);
+        Button loginpass = (Button) findViewById(R.id.return_regjiantou);
         loginpass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
