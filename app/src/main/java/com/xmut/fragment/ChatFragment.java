@@ -16,5 +16,6 @@ public class ChatFragment extends Fragment {
         view = inflater.inflate(R.layout.chat_layout, group, false);
         return  view;
 
+
     }
 }
