@@ -68,6 +68,7 @@ public class FriendFragment extends Fragment {
             @Override
             public void run() {
                 initRecycleView(list);
+
             }
         });
     }
