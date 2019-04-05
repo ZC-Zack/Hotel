@@ -32,6 +32,7 @@ public class ChatFragment extends Fragment {
         /*initMsg();
         initView();*/
         return  view;
+
     }
 
     private void initView(){
