@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 import com.example.activity.R;
 
@@ -58,12 +59,30 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-
-        Button registerButton=(Button)findViewById(R.id.register_pass);
+        //注册按钮
+        Button registerButton=(Button)findViewById(R.id.act_login_phone_loginBut);
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(LoginActivity.this,RegisterActivity.class);
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+        //返回按钮
+        Button returnButton=(Button)findViewById(R.id.return_Button);
+        returnButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button forgetButton=(Button)findViewById(R.id.forget_pass);
+        //忘记密码按钮   页面没做
+        forgetButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });

@@ -18,11 +18,12 @@
             android:background="@drawable/selector_lin"
             android:orientation="horizontal">
 
-            <ImageView
+            <Button
+                android:id="@+id/return_Button"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginLeft="5dp"
-                android:src="@drawable/login_zuojiantou" />
+                android:background="@drawable/login_zuojiantou" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -37,7 +38,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
-        <TextView
+        <Button
             android:id="@+id/act_login_reg"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -187,7 +188,7 @@
             android:text="记住密码"
             />
         <Button
-            android:id="@+id/register_pass"
+            android:id="@+id/forget_pass"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
